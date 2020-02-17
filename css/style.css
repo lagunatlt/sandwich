@@ -1,0 +1,58 @@
+div, ul, li {
+	border: 1px solid grey;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+header,
+footer,
+section {
+	width: 100%;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.top__header {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.header__main-left {
+	max-width: 45%;
+}
+
+.top__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.top__list li {
+	display: inline-block;
+	width: 48%;
+}
+.header__main-right {
+  max-width: 45%;
+}
+
+.card__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.card__item {
+  border: 1px solid gray;
+	border-radius: 5px;
+  width: 300px;
+	height: 350px;
+	text-align: center;
+	padding: 20px;
+	margin: 0 10px 20px 10px;
+}

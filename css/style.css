@@ -6,9 +6,9 @@ div, ul, li {
 	margin: 0;
 	box-sizing: border-box;
 }
-h2 {
+/* h2 {
 	text-align: center;
-}
+} */
 header,
 footer,
 section {
@@ -82,4 +82,38 @@ div.object__item:nth-child(4) {
 div.object__item:nth-child(5) {
   width: 550px;
   height: 300px;
+}
+
+.calc__wrap {
+  display: flex;
+  justify-content: center;
+}
+.calc__desc {
+  width: 40%;
+}
+.calc__img {
+  width: 40%;
+}
+.delivery-img__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.delivery-img__item {
+  width: 400px;
+  height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: column;
 }

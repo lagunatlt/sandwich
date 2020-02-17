@@ -6,6 +6,9 @@ div, ul, li {
 	margin: 0;
 	box-sizing: border-box;
 }
+h2 {
+	text-align: center;
+}
 header,
 footer,
 section {
@@ -48,11 +51,35 @@ section {
 	flex-wrap: wrap;
 }
 .card__item {
-  border: 1px solid gray;
-	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
   width: 300px;
 	height: 350px;
-	text-align: center;
-	padding: 20px;
 	margin: 0 10px 20px 10px;
+	padding: 20px;
+  border: 1px solid gray;
+	border-radius: 5px;
+	text-align: center;
+}
+.object__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.object__item {
+	width: 360px;
+	height: 235px;
+	margin: 0 10px 20px 10px;
+}
+
+div.object__item:nth-child(4) {
+  width: 550px;
+  height: 300px;
+}
+
+div.object__item:nth-child(5) {
+  width: 550px;
+  height: 300px;
 }

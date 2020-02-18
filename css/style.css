@@ -235,7 +235,7 @@ button {
 	transform: scale(1);
 }
 input {
-	min-height: 61px;
+	min-height: 59px;
 	border: 1px solid gray;
 	min-width: 312px;
 	font-size: 18px;
@@ -383,6 +383,18 @@ div.object__item:nth-child(5) {
   display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.request-bottom {
+	width: 100%;
+}
+.request-bottom p {
+  text-align: center;
+}
+.request-bottom form {
+  flex-direction: column;
+}
+.request-bottom input{
+  margin-bottom: 40px;
 }
 .work-video {
   background-color: #5e5e5e;

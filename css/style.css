@@ -141,14 +141,27 @@ section {
 .button {
 	position: relative;
 	margin-bottom: 105px;
-	padding: 30px 70px;
+	padding: 22px 65px 27px;
 	background-color: #247ABF;
-	border: none;
 	border-radius: 5px;
 	color: #fff;
 	font-size: 32px;
   font-family: 'gothampro-bold';
 	box-shadow: 0px 14px 29px RGBA(36, 122, 191, 0.15);
+	border: 3px solid RGBA(110, 190, 255, 0.2);
+	box-sizing: border-box;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.button:hover {
+	box-shadow: 0px 14px 29px RGBA(36, 122, 191, 0.55);
+	transform: translateY(-2px);
+	transition: all 0.2s;
+}
+.button:active {
+		box-shadow: 0px 14px 29px RGBA(36, 122, 191, 0.15);
+		transform: translateY(0);
+		transition: all 0.2s;
 }
 .header__main-right {
 	max-width: 34%;

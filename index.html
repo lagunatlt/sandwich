@@ -21,7 +21,9 @@
 							<a class="top__phone" href="tel:+7999999999">+7 (999) 999-99-99</a>
 							<a class="top__phone-link" href="#">Заказать звонок</a>
 						</div>
-						<div class="top__menu-burger">=</div>
+						<div class="top__menu-burger-wrap">
+							<div class="top__menu-burger"></div>
+						</div>
 					</div>
 					<div class="header__main-wrap">
 						<div class="header__main-left">
@@ -34,7 +36,7 @@
 									<li>Доборные элементы</li>
 									<li>Крепеж</li>
 								</ul>
-								<button class="button">Заказать сэндвич-панели</button>
+								<button class="button button-header">Заказать сэндвич-панели</button>
 							</div>
 						</div>
 						<div class="header__main-right">
@@ -48,38 +50,51 @@
 	<section class="card">
 		<div class="container">
 			<div class="card__items-warp">
-				<h2>Мы производим сэндвич-панели со всеми видами утеплителя</h2>
+				<h2 class="section__title">Мы производим сэндвич-панели<br>со всеми видами утеплителя</h2>
 				<div class="card__items">
 					<div class="card__item">
-						<img src="#" alt="карточка">
-						<p class="card__desc">Описание товара, описание товара</p>
-						<button>Подробнее</button>
+						<div class="card__item-img">
+							<img src="img/item1.png" alt="карточка">
+						</div>
+						<p class="card__desc">Сэндвич-панели с утеплителем-минватой</p>
+						<button class="button-item">Подробнее</button>
 					</div>
 					<div class="card__item">
-						<img src="#" alt="карточка">
-						<p class="card__desc">Описание товара, описание товара</p>
-						<button>Подробнее</button>
+						<div class="card__item-img">
+							<img src="img/item2.png" alt="карточка">
+						</div>
+						<p class="card__desc">Пенополистирол</p>
+						<button class="button-item">Подробнее</button>
 					</div>
 					<div class="card__item">
-						<img src="#" alt="карточка">
-						<p class="card__desc">Описание товара, описание товара</p>
-						<button>Подробнее</button>
+						<div class="card__item-img">
+							<img src="img/item3.png" alt="карточка">
+						</div>
+						<p class="card__desc">Пенопласт</p>
+						<button class="button-item">Подробнее</button>
 					</div>
 					<div class="card__item">
-						<img src="#" alt="карточка">
-						<p class="card__desc">Описание товара, описание товара</p>
-						<button>Подробнее</button>
+						<div class="card__item-img">
+							<img src="img/item4.png" alt="карточка">
+						</div>
+						<p class="card__desc">Кровельные сэндвич-панели</p>
+						<button class="button-item">Подробнее</button>
 					</div>
 					<div class="card__item">
-						<img src="#" alt="карточка">
-						<p class="card__desc">Описание товара, описание товара</p>
-						<button>Подробнее</button>
+						<div class="card__item-img">
+							<img src="img/item5.png" alt="карточка">
+						</div>
+						<p class="card__desc">Стеновые сэндвич-панели</p>
+						<button class="button-item">Подробнее</button>
 					</div>
 					<div class="card__item">
-						<img src="#" alt="карточка">
-						<p class="card__desc">Описание товара, описание товара</p>
-						<button>Подробнее</button>
+						<div class="card__item-img">
+							<img src="img/item6.png" alt="карточка">
+						</div>
+						<p class="card__desc">Сэндвич-панели с утеплителем-пенополистиролом</p>
+						<button class="button-item">Подробнее</button>
 					</div>
+					
 				</div>
 			</div>
 
@@ -88,7 +103,7 @@
 	<section class="object">
 		<div class="container">
 			<div class="object__wrap">
-				<h2>Сданные объекты из наших сэндвич-панелей</h2>
+				<h2 class="section__title font-white">Сданные объекты<br>из наших сэндвич-панелей</h2>
 				<div class="object__items">
 					<div class="object__item">
 						<a data-fancybox="gallery" href="#"><img
@@ -133,10 +148,10 @@
 			<div class="calc__wrap">
 				<div class="calc__desc">
 					<h2 class="calc_title">
-						Калькулятор для расчета заказа
+						Калькулятор<br>для расчета заказа
 					</h2>
 					<p><span>Ответьте</span> на несколько вопросов и мы расчитаем Ваш <span>заказ за 10 минут</span></p>
-					<button>Расчитать заказ</button>
+					<button class="button button-main">Расcчитать заказ</button>
 				</div>
 				<div class="calc__img"></div>
 			</div>
@@ -145,7 +160,7 @@
 	<section class="work-video">
 		<div class="container">
 			<div class="work-video__wrap">
-				<h2>Рязанский завод сэндвич-панелей<br>посмотрите видео с нашего производства</h2>
+				<h2 class="section__title font-white">Рязанский завод сэндвич-панелей<br>посмотрите видео с нашего производства</h2>
 				<div class="work-video__item">
 					видео
 				</div>
@@ -159,7 +174,7 @@
 				<p>и мы <span>и мы рассчитаем Ваш заказ с учетом доставки</span> уже сегодня</p>
 				<form action="#" id="form" class="form">
 					<input type="text" class="tel" placeholder="Введите Ваш номер телефона">
-					<button onclick='window.location="https://www.bodypage.ru/";'>Рассчитать заказ</button>
+					<button class="button button-main">Рассчитать заказ</button>
 				</form>
 			</div>
 		</div>
@@ -167,7 +182,7 @@
 	<section class="design">
 		<div class="container">
 			<div class="desing__wrap">
-				<h2>Конструкция наших сэндвич-панелей</h2>
+				<h2 class="section__title font-white">Конструкция наших сэндвич-панелей</h2>
 			</div>
 		</div>
 	</section>
@@ -178,7 +193,7 @@
 				<p>и мы <span>и мы рассчитаем Ваш заказ с учетом доставки</span> уже сегодня</p>
 				<form action="#" id="form" class="form">
 					<input type="text" class="tel" placeholder="Введите Ваш номер телефона">
-					<button onclick='window.location="https://www.bodypage.ru/";'>Рассчитать заказ</button>
+					<button class="button button-main">Рассчитать заказ</button>
 				</form>
 			</div>
 		</div>
@@ -186,7 +201,7 @@
 	<section class="delivery">
 		<div class="container">
 			<div class="delivery__wrap">
-				<h2>Мы следим за упаковкой и транспортировкой продукции от производства и по всему центральному региону РФ</h2>
+				<h2 class="section__title font-white">Мы следим за упаковкой и транспортировкой<br>продукции от производства и по всему<br>центральному региону РФ</h2>
 				<div class="delivery-img__items">
 					<div class="delivery-img__item">
 						<img src="#" alt="доставка">
@@ -207,11 +222,11 @@
 	<section class="request">
 		<div class="container">
 			<div class="request__wrap">
-				<h2>Остались дополнительные вопросы?</h2>
+				<h2 class="section__title">Остались дополнительные вопросы?</h2>
 				<p>Оставьте заявку<span>и мы сами свяжемся с Вами</span></p>
 				<form action="#" id="form" class="form">
 					<input type="text" class="tel" placeholder="Введите Ваш номер телефона">
-					<button onclick='window.location="https://www.bodypage.ru/";'>Рассчитать заказ</button>
+					<button class="button button-main">Рассчитать заказ</button>
 				</form>
 			</div>
 		</div>
@@ -250,6 +265,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./js/jquery341min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>

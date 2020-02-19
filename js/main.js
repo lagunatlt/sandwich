@@ -1,3 +1,42 @@
+$("document").ready(function ($) {
+
+	// let nav = $('.top_box');
+	// let nav = $('.top_box');
+	// let nav = $('.top_box');
+	// let nav = $('.top_box');
+	// let nav = $('.top_box');
+	// let nav = $('.top_box');
+	// top_header-menu
+	// top__header
+	// top__logo
+	// top__desc
+	// top__phone
+	// top__phone-link
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$('.top_header-menu').addClass("top_header-menu-fixed");
+			$('.top__header').addClass("top__header-fixed");
+			$('.top__logo').addClass("top__logo-fixed");
+			$('.top__desc').addClass("top__desc-fixed");
+			$('.top__phone').addClass("top__phone-fixed");
+			$('.top__phone-link').addClass("top__phone-link-fixed");
+			$('.header-wrap__bg').addClass("header-wrap__bg-fixed");
+		} else {
+			$('.top_header-menu').removeClass("top_header-menu-fixed");
+			$('.top__header').removeClass("top__header-fixed");
+			$('.top__logo').removeClass("top__logo-fixed");
+			$('.top__desc').removeClass("top__desc-fixed");
+			$('.top__phone').removeClass("top__phone-fixed");
+			$('.top__phone-link').removeClass("top__phone-link-fixed");
+			$('.header-wrap__bg').removeClass("header-wrap__bg-fixed");
+		}
+	});
+
+});
+
+
+
+
 window.addEventListener("DOMContentLoaded", function () {
 	[].forEach.call(document.querySelectorAll('.tel'), function (input) {
 		var keyCode;

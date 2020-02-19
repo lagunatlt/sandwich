@@ -40,6 +40,7 @@ h2 {
 	background-size: cover;
 	color: #fff;
 	overflow: hidden;
+	/* transition: all 0.3s; */
 }
 .header-wrap__bg::before {
 	position: absolute;
@@ -65,32 +66,39 @@ h2 {
 	height: 110px;
 	align-items: center;
 	margin-bottom: 70px;
+	/* transition: all 0.3s; */
 }
 .top__logo {
 	width: 232px;
+	transition: all 0.3s;
 }
 .top__logo img {
 	width: 100%;
+	transition: all 0.3s;
 }
 .top__desc {
 	font-family: 'gothampro';
 	line-height: 26px;
+	transition: all 0.3s;
 }
 .top__phone-wrap {
 	display: flex;
 	flex-direction: column;
 	align-items: end;
+	transition: all 0.3s;
 }
 .top__phone {
 	font-size: 32px;
 	color: #fff;
 	text-decoration: none;
+	transition: all 0.3s;
 }
 .top__phone-link {
 	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'gothampro';
+	transition: all 0.3s;
 }
 .top__menu-burger-wrap {
   width: 44px;
@@ -415,4 +423,51 @@ div.object__item:nth-child(5) {
 .footer__link {
   display: flex;
   flex-direction: column;
+}
+
+/* ------fixed----- */
+.top_header-menu-fixed {
+  position: fixed;
+  background-color: gray;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 56px;
+  padding-top: 5px;
+	box-shadow: 0 4px 13px #00000057;
+	transition: all 0.3s;
+}
+
+.top__header-fixed {
+  height: auto;
+  margin-bottom: 0px;
+  max-width: 1170px;
+	margin: 0 auto;
+	transition: all 0.3s;
+
+}
+
+.top__logo-fixed img {
+	width: 80%;
+	transition: all 0.3s;
+}
+
+.top__desc-fixed {
+	line-height: 20px;
+	transition: all 0.3s;
+}
+
+.top__phone-fixed {
+	font-size: 25px;
+	transition: all 0.3s;
+}
+
+.top__phone-link-fixed {
+	font-size: 13px;
+	transition: all 0.3s;
+}
+.header-wrap__bg-fixed {
+	padding-top: 178px;
+	/* transition: all 0.3s; */
 }

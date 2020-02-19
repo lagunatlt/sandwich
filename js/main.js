@@ -1,17 +1,4 @@
 $("document").ready(function ($) {
-
-	// let nav = $('.top_box');
-	// let nav = $('.top_box');
-	// let nav = $('.top_box');
-	// let nav = $('.top_box');
-	// let nav = $('.top_box');
-	// let nav = $('.top_box');
-	// top_header-menu
-	// top__header
-	// top__logo
-	// top__desc
-	// top__phone
-	// top__phone-link
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 100) {
 			$('.top_header-menu').addClass("top_header-menu-fixed");
@@ -31,12 +18,8 @@ $("document").ready(function ($) {
 			$('.header-wrap__bg').removeClass("header-wrap__bg-fixed");
 		}
 	});
-
 });
-
-
-
-
+/* ----------------------- */
 window.addEventListener("DOMContentLoaded", function () {
 	[].forEach.call(document.querySelectorAll('.tel'), function (input) {
 		var keyCode;

@@ -402,6 +402,8 @@ div.object__item:nth-child(5) {
 }
 .request__wrap {
 	width: 52%;
+	position: relative;
+	z-index: 1;
 }
 .request__wrap h2 {
 	margin-bottom: 15px;

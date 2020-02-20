@@ -56,3 +56,44 @@ window.addEventListener("DOMContentLoaded", function () {
 	});
 
 });
+/*  -----------modal-menu------------ */
+let modalMenu = document.getElementById('modalMenu');
+let buttonMenu = document.getElementById('buttonMenu');
+let modalBg = document.getElementById('modalBg');
+let modalMenuClose = document.getElementById('modalMenuClose');
+
+
+let menuShow = function() {
+	modalMenu.classList.add('modal-menu__show');
+	// $('body').addClass('fancybox-active');
+	$('body').addClass('compensate-for-scrollbar');
+	modalBg.classList.add('modal-menu__bg-show');
+	setTimeout(function() {
+		modalBg.classList.add('modal-menu__bg-opacity');
+	}, 80);
+	
+};
+let menuHide = function() {
+	modalMenu.classList.remove('modal-menu__show');
+	$('body').removeClass('compensate-for-scrollbar');
+	modalBg.classList.remove('modal-menu__bg-opacity');
+	setTimeout(function() {
+		modalBg.classList.remove('modal-menu__bg-show');
+	}, 1000);
+};
+
+buttonMenu.addEventListener('click', function() {
+	if (modalMenu.classList.contains('modal-menu__show')) {
+		menuHide();
+	} else {
+		modalMenu.classList.add('modal-menu__show');
+		menuShow();
+	}
+});
+
+modalMenuClose.addEventListener('click', menuHide);
+modalBg.addEventListener('click', menuHide);
+
+/*  ----------------------- */
+
+// fancybox - active compensate -for-scrollbar

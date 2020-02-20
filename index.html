@@ -9,6 +9,23 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="modal-request">
+		<div class="request__wrap request__modal" id="hidden-content-2" style="display: none;">
+			<h2>Отправьте заявку</h2>
+			<p>и мы <span>и мы рассчитаем Ваш заказ с учетом доставки</span> уже сегодня</p>
+			<form action="#" id="form" class="form">
+				<input type="text" class="tel" placeholder="Введите Ваш номер телефона">
+				<button class="button button-main">Рассчитать
+					заказ</button>
+			</form>
+		</div>
+	</div>
+	<div class="modal-menu">
+		<div class="modal-menu__content" id="modalMenu">
+			<div class="menu-close" id="modalMenuClose">х</div>
+		</div>
+		<div class="modal-menu__bg" id="modalBg"></div>
+	</div>
 	<header>
 		<div class="header-wrap__bg">
 			<div class="container">
@@ -21,10 +38,10 @@
 							<div class="top__desc">Производитель сэндвич-панелей<br>в республике Татарстан</div>
 							<div class="top__phone-wrap">
 								<a class="top__phone" href="tel:+7999999999">+7 (999) 999-99-99</a>
-								<a class="top__phone-link" href="#">Заказать звонок</a>
+								<a class="top__phone-link" data-fancybox data-src="#hidden-content-2" href="javascript:;">Заказать звонок</a>
 							</div>
-							<div class="top__menu-burger-wrap">
-								<div class="top__menu-burger"></div>
+							<div class="top__menu-burger-wrap" id="buttonMenu">
+								<a class="top__menu-burger"></a>
 							</div>
 						</div>
 					</div>
@@ -39,7 +56,7 @@
 									<li>Доборные элементы</li>
 									<li>Крепеж</li>
 								</ul>
-								<button class="button button-header">Заказать сэндвич-панели</button>
+								<a class="button button-header" data-fancybox data-src="#hidden-content-2" href="javascript:;">Заказать сэндвич-панели</a>
 							</div>
 						</div>
 						<div class="header__main-right">
@@ -60,42 +77,42 @@
 							<img src="img/item1.png" alt="карточка">
 						</div>
 						<p class="card__desc">Сэндвич-панели с утеплителем-минватой</p>
-						<button class="button-item">Подробнее</button>
+						<a class="button-item" data-fancybox data-src="#hidden-content-2" href="javascript:;">Подробнее</a>
 					</div>
 					<div class="card__item">
 						<div class="card__item-img">
 							<img src="img/item2.png" alt="карточка">
 						</div>
 						<p class="card__desc">Пенополистирол</p>
-						<button class="button-item">Подробнее</button>
+						<a class="button-item" data-fancybox data-src="#hidden-content-2" href="javascript:;">Подробнее</a>
 					</div>
 					<div class="card__item">
 						<div class="card__item-img">
 							<img src="img/item3.png" alt="карточка">
 						</div>
 						<p class="card__desc">Пенопласт</p>
-						<button class="button-item">Подробнее</button>
+						<a class="button-item" data-fancybox data-src="#hidden-content-2" href="javascript:;">Подробнее</a>
 					</div>
 					<div class="card__item">
 						<div class="card__item-img">
 							<img src="img/item4.png" alt="карточка">
 						</div>
 						<p class="card__desc">Кровельные сэндвич-панели</p>
-						<button class="button-item">Подробнее</button>
+						<a class="button-item" data-fancybox data-src="#hidden-content-2" href="javascript:;">Подробнее</a>
 					</div>
 					<div class="card__item">
 						<div class="card__item-img">
 							<img src="img/item5.png" alt="карточка">
 						</div>
 						<p class="card__desc">Стеновые сэндвич-панели</p>
-						<button class="button-item">Подробнее</button>
+						<a class="button-item" data-fancybox data-src="#hidden-content-2" href="javascript:;">Подробнее</a>
 					</div>
 					<div class="card__item">
 						<div class="card__item-img">
 							<img src="img/item6.png" alt="карточка">
 						</div>
 						<p class="card__desc">Сэндвич-панели с утеплителем-пенополистиролом</p>
-						<button class="button-item">Подробнее</button>
+						<a class="button-item" data-fancybox data-src="#hidden-content-2" href="javascript:;">Подробнее</a>
 					</div>
 					
 				</div>
@@ -110,36 +127,44 @@
 					<h2 class="section__title font-white">Сданные объекты<br>из наших сэндвич-панелей</h2>
 					<div class="object__items">
 						<div class="object__item">
-							<a data-fancybox="gallery" href="#"><img
-									src="#" alt="сэндвич-панели"></a>
+							<a data-fancybox="gallery" href="img/portfolio/big/01.jpg" class="object__item-img" 
+							style="background-image: url(../img/portfolio/01.jpg);"></a>
+								<!-- <img src="img/portfolio/01.jpg" alt="сэндвич-панели"></a> -->
 						</div>
 						<div class="object__item">
-							<a data-fancybox="gallery" href="#"><img
-									src="#" alt="сэндвич-панели"></a>
+							<a data-fancybox="gallery" href="img/portfolio/big/02.jpg" class="object__item-img" 
+							style="background-image: url(../img/portfolio/02.jpg);"></a>
+								<!-- <img src="img/portfolio/02.jpg" alt="сэндвич-панели"></a> -->
 						</div>
 						<div class="object__item">
-							<a data-fancybox="gallery" href="#"><img
-									src="#" alt="сэндвич-панели"></a>
+							<a data-fancybox="gallery" href="img/portfolio/big/03.jpg" class="object__item-img" 
+							style="background-image: url(../img/portfolio/03.jpg);"></a>
+								<!-- <img src="img/portfolio/03.jpg" alt="сэндвич-панели"></a> -->
 						</div>
 						<div class="object__item">
-							<a data-fancybox="gallery" href="#"><img
-									src="#" alt="сэндвич-панели"></a>
+							<a data-fancybox="gallery" href="img/portfolio/big/04.jpg" class="object__item-img" 
+							style="background-image: url(../img/portfolio/04.jpg);"></a>
+								<!-- <img src="img/portfolio/04.jpg" alt="сэндвич-панели"></a> -->
 						</div>
 						<div class="object__item">
-							<a data-fancybox="gallery" href="#"><img
-									src="#" alt="сэндвич-панели"></a>
+							<a data-fancybox="gallery" href="img/portfolio/big/05.jpg" class="object__item-img" 
+							style="background-image: url(../img/portfolio/05.jpg);"></a>
+								<!-- <img src="img/portfolio/05.jpg" alt="сэндвич-панели"></a> -->
 						</div>
 						<div class="object__item">
-							<a data-fancybox="gallery" href="#"><img
-									src="#" alt="сэндвич-панели"></a>
+							<a data-fancybox="gallery" href="img/portfolio/big/06.jpg" class="object__item-img" 
+							style="background-image: url(../img/portfolio/06.jpg);"></a>
+								<!-- <img src="img/portfolio/06.jpg" alt="сэндвич-панели"></a> -->
 						</div>
 						<div class="object__item">
-							<a data-fancybox="gallery" href="#"><img
-									src="#" alt="сэндвич-панели"></a>
+							<a data-fancybox="gallery" href="img/portfolio/big/07.jpg" class="object__item-img" 
+							style="background-image: url(../img/portfolio/07.jpg);"></a>
+								<!-- <img src="img/portfolio/07.jpg" alt="сэндвич-панели"></a> -->
 						</div>
 						<div class="object__item">
-							<a data-fancybox="gallery" href="#"><img
-									src="#" alt="сэндвич-панели"></a>
+							<a data-fancybox="gallery" href="img/portfolio/big/08.jpg" class="object__item-img" 
+							style="background-image: url(../img/portfolio/08.jpg);"></a>
+								<!-- <img src="img/portfolio/08.jpg" alt="сэндвич-панели"></a> -->
 						</div>
 				
 	
@@ -156,7 +181,7 @@
 						Калькулятор<br>для расчета заказа
 					</h2>
 					<p><span>Ответьте</span> на несколько вопросов и мы расчитаем Ваш <span>заказ за 10 минут</span></p>
-					<button class="button button-main">Расcчитать заказ</button>
+					<a class="button button-main" data-fancybox data-src="#hidden-content-2" href="javascript:;">Расcчитать заказ</a>
 				</div>
 				<div class="calc__img"></div>
 			</div>
@@ -268,7 +293,7 @@
 				</div>
 				<div class="footer__phone">
 					<a href="tel:+7999999999">+7 (999) 999-99-99</a>
-					<a href="#">Заказать звонок</a>
+					<a data-fancybox data-src="#hidden-content-2" href="javascript:;">Заказать звонок</a>
 				</div>
 			</div>
 		</div>

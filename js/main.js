@@ -65,7 +65,6 @@ let modalMenuClose = document.getElementById('modalMenuClose');
 
 let menuShow = function() {
 	modalMenu.classList.add('modal-menu__show');
-	// $('body').addClass('fancybox-active');
 	$('body').addClass('compensate-for-scrollbar');
 	modalBg.classList.add('modal-menu__bg-show');
 	setTimeout(function() {
@@ -95,5 +94,3 @@ modalMenuClose.addEventListener('click', menuHide);
 modalBg.addEventListener('click', menuHide);
 
 /*  ----------------------- */
-
-// fancybox - active compensate -for-scrollbar
